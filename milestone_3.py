@@ -1,4 +1,4 @@
-from milestone_2 import word
+import milestone_2
 
 while True:
     guess = input("Guess a letter.")
@@ -8,7 +8,7 @@ while True:
     else:
         print("Invalid letter. Please enter a single alphabetical character.")
 
-        
+
 if guess in word:
         print(f"Good guess! {guess} is in the word")
     
