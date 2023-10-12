@@ -6,7 +6,6 @@ class Hangman:
         self.word_guessed = ['_' for character in self.word]
         self.num_letters = len(set(self.word))
         self.num_lives = num_lives
-        self.word_list = ["melon", "grape", "banana", "apple", "pineapple"]
         self.list_of_guesses = []
 
     def check_guess(self, guess):
@@ -19,10 +18,11 @@ class Hangman:
             guess = input("Guess a letter...")
             if guess.isalpha() != True:
                 print("Invalid letter. Please, enter a single alphabetical character.")
-            elif guess in Hangman.list_of_guesses:
+            elif guess in self.list_of_guesses:
                 print("You already tried that letter!")
             else:
-                Hangman.check_guess(guess)
-                Hangman.list_of_guesses.append(guess)
+                self.check_guess(guess)
+                self.list_of_guesses.append(guess)
 
-Hangman.ask_for_input()
+game = Hangman()
+game.ask_for_input()
