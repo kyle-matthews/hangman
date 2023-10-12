@@ -1,19 +1,4 @@
 import random
-word_list = ["melon", "grape", "banana", "apple", "pineapple"]
-print(word_list)
-
-def random_choice(list):
-    word = random.choice(word_list) 
-    return word
-
-word = random_choice(word_list)
-
-def check_guess(guess):
-    guess = guess.lower()
-    if guess in word:
-        print(f"Good guess! {guess} is in the word")
-    else:
-        print(f"Sorry, {guess} is not in the word. Try again.")
 
 def ask_for_input():
     while True:
@@ -28,3 +13,25 @@ def ask_for_input():
 
 
 ask_for_input()
+
+class Hangman:
+    def __init__(self, word_list, num_lives = 5):
+        self.word = random.choice(word_list)
+        self.word_guessed = ['_' for character in self.word]
+        self.num_letters = len(set(self.word))
+        self.num_lives = num_lives
+        self.word_list = ["melon", "grape", "banana", "apple", "pineapple"]
+        self.list_of_guesses = []
+
+    def check_guess(self, guess):
+        self.guess = guess.lower()
+        if guess in self.word:
+            print(f"Good guess! {guess} is in the word!")
+    
+    def ask_for_input():
+        while True:
+            guess = input("Guess a letter...")
+            if guess.isalpha() != True:
+                print("Invalid letter. Please, enter a single aplphabetical character.")
+            elif guess in self.list_of_guesses:
+                print("You already tried that letter!")
