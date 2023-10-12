@@ -4,12 +4,15 @@
 
 ### Contents
 1. Introduction
-2. More to be added soon.
-3. 
+2. Lessons Learned
+3. Installation Instructions
+4. Usage Instructions
+5. File Structure
+6. License Information 
 
 ---
 
-#### Introduction
+#### 1 - Introduction
 
 Hangman is a classic game in which a player thinks of a word and the other player tries to guess that word within a certain amount of attempts.
 
@@ -17,28 +20,39 @@ This is an implementation of the Hangman game, where the computer thinks of a wo
 
 ---
 
-#### Updates: 
-
-The game can now loop through and check if the letter you have entered is in the randomly selected word or not. In the next update a function will be added to keep track of how many guesses have been taken by the user. 
-
-#### Lessons learned
+#### 2- Lessons learned
 
 During this project the author has had to apply their learning from a number of different areas, including programming in Python, version control in git/github and the use of a CLI. 
 
+It has tested my ability to define classes with a number of methods, create working loops and purposeful use of if/else statements. At various points during the project it was clear that there were sections where I had repeated myself, or had coded the game in such a way that it was difficult to follow. 
+
+The game started off rather clunkily with a range of if/elif/else statements before becoming the 'final'* product that you can see today. 
+
+I'm sure it's not perfect, but for someone whose current day job is teaching 9 and 10 year olds, I don't think it's too shabby. 
+
+*_final is italicised, because who knows, one day I may learn new skills, and I might come back and improve it even more._
+
 ---
 
-#### Installation Instructions
+#### 3- Installation Instructions
 
-Once you have downloaded the source file the program can be called from Python. 
+Once you have downloaded the source file the program can be called from Python within your computers terminal. Ensure that you have Python installed. 
 
-#### Usage Instructions
+For Linux/Mac OS users you will need to call 'Python milestone_5.py' in order to play the game. 
 
-In order to begin the program, you will need to call the 'game.ask_for_input()'.
-At this point you can decide how many lives you need by calling it as an argument. (The default value is 5 lives if the program is ran without an argument).
+Windows users - You will be able to access the game in Powershell or the Command Line. 
 
-#### File Structure
+#### 4- Usage Instructions
 
-#### License information
+~~In order to begin the program, you will need to call the 'game.ask_for_input()'.~~
+Good news! The game now runs automatically when it is opened! 
+It can also loop itself as required, but be warned, when you run out of lives it's game over! 
+
+#### 5- File Structure
+
+The file structure is to be updated, for those curious minds out there, I have included the previous versions of the game so you can see the journey. 
+
+#### 6 - License information
 
 Boost Software License - Version 1.0 - August 17th, 2003
 
