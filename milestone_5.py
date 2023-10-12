@@ -57,5 +57,5 @@ def play_game(word_list):
     
         
 
-word_list = ["melon"]
+word_list = ["melon", "banana", "apple", "lime", "kiwi", "dragonfruit", "pineapple"]
 play_game(word_list)
