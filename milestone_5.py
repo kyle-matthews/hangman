@@ -1,8 +1,8 @@
 import random
 
 class Hangman:
-    def __init__(self, num_lives = 5):
-        self.word_list = ["melon", "grape", "banana", "apple", "pineapple"]
+    def __init__(self, word_list, num_lives = 5):
+        self.word_list = word_list
         self.word = random.choice(self.word_list)
         self.word_guessed = ['_' for character in self.word]
         self.num_letters = len(set(self.word))
@@ -43,9 +43,12 @@ def play_game(word_list):
     while True:
         if num_lives == 0:
             print("You lost!")
-        elif Hangman.num_letters > 0:
+            break
+        elif game.num_letters > 0:
             game.ask_for_input()
-        elif num_lives != 0 and Hangman.num_letters <  0:
+        elif game.num_letters == 0:
             print("Congratulations! You won the game!")
+            break
 
+word_list = ["melon"]
 play_game(word_list)
