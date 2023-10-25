@@ -1,6 +1,6 @@
 # Hangman
 
-!['A game of hangman']("/home/kyle/Downloads/hangman.jpg")
+!['A game of hangman'](/home/kyle/Downloads/hangman.jpg)
 
 ### Contents
 1. Introduction
