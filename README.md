@@ -1,6 +1,8 @@
 # Hangman
 
-!['A game of hangman']("/home/kyle/Downloads/hangman.jpg")
+!['A game of hangman'](/home/kyle/Downloads/hangman.jpg)
+
+![Python](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)
 
 ### Contents
 1. Introduction
